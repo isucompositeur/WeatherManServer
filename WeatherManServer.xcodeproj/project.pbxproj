@@ -1,0 +1,236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010E61EB14E223DA000D8E82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010E61EA14E223D9000D8E82 /* Foundation.framework */; };
+		010E61EE14E223DA000D8E82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 010E61ED14E223DA000D8E82 /* main.m */; };
+		010E61F214E223DA000D8E82 /* WeatherManServer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 010E61F114E223DA000D8E82 /* WeatherManServer.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		010E61E414E223D9000D8E82 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				010E61F214E223DA000D8E82 /* WeatherManServer.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		010E61E614E223D9000D8E82 /* WeatherManServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WeatherManServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		010E61EA14E223D9000D8E82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		010E61ED14E223DA000D8E82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		010E61F014E223DA000D8E82 /* WeatherManServer-Prefix.pch */ = {isa = PBXFileReference; path = "WeatherManServer-Prefix.pch"; sourceTree = "<group>"; };
+		010E61F114E223DA000D8E82 /* WeatherManServer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WeatherManServer.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		010E61E314E223D9000D8E82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010E61EB14E223DA000D8E82 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010E61DB14E223D9000D8E82 = {
+			isa = PBXGroup;
+			children = (
+				010E61EC14E223DA000D8E82 /* WeatherManServer */,
+				010E61E914E223D9000D8E82 /* Frameworks */,
+				010E61E714E223D9000D8E82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		010E61E714E223D9000D8E82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				010E61E614E223D9000D8E82 /* WeatherManServer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		010E61E914E223D9000D8E82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				010E61EA14E223D9000D8E82 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		010E61EC14E223DA000D8E82 /* WeatherManServer */ = {
+			isa = PBXGroup;
+			children = (
+				010E61ED14E223DA000D8E82 /* main.m */,
+				010E61F114E223DA000D8E82 /* WeatherManServer.1 */,
+				010E61EF14E223DA000D8E82 /* Supporting Files */,
+			);
+			path = WeatherManServer;
+			sourceTree = "<group>";
+		};
+		010E61EF14E223DA000D8E82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				010E61F014E223DA000D8E82 /* WeatherManServer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		010E61E514E223D9000D8E82 /* WeatherManServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 010E61F514E223DA000D8E82 /* Build configuration list for PBXNativeTarget "WeatherManServer" */;
+			buildPhases = (
+				010E61E214E223D9000D8E82 /* Sources */,
+				010E61E314E223D9000D8E82 /* Frameworks */,
+				010E61E414E223D9000D8E82 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherManServer;
+			productName = WeatherManServer;
+			productReference = 010E61E614E223D9000D8E82 /* WeatherManServer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		010E61DD14E223D9000D8E82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 010E61E014E223D9000D8E82 /* Build configuration list for PBXProject "WeatherManServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 010E61DB14E223D9000D8E82;
+			productRefGroup = 010E61E714E223D9000D8E82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				010E61E514E223D9000D8E82 /* WeatherManServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		010E61E214E223D9000D8E82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				010E61EE14E223DA000D8E82 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		010E61F314E223DA000D8E82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		010E61F414E223DA000D8E82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		010E61F614E223DA000D8E82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherManServer/WeatherManServer-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		010E61F714E223DA000D8E82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherManServer/WeatherManServer-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		010E61E014E223D9000D8E82 /* Build configuration list for PBXProject "WeatherManServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010E61F314E223DA000D8E82 /* Debug */,
+				010E61F414E223DA000D8E82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		010E61F514E223DA000D8E82 /* Build configuration list for PBXNativeTarget "WeatherManServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010E61F614E223DA000D8E82 /* Debug */,
+				010E61F714E223DA000D8E82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 010E61DD14E223D9000D8E82 /* Project object */;
+}
