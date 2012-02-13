@@ -10,6 +10,10 @@
 		010E61EB14E223DA000D8E82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010E61EA14E223D9000D8E82 /* Foundation.framework */; };
 		010E61EE14E223DA000D8E82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 010E61ED14E223DA000D8E82 /* main.m */; };
 		010E61F214E223DA000D8E82 /* WeatherManServer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 010E61F114E223DA000D8E82 /* WeatherManServer.1 */; };
+		010E61FA14E36D10000D8E82 /* WXSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 010E61F914E36D10000D8E82 /* WXSocketClient.m */; };
+		010E61FE14E36F90000D8E82 /* WXDefaultSocketFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 010E61FD14E36F90000D8E82 /* WXDefaultSocketFactory.m */; };
+		010E620414E37968000D8E82 /* WXSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 010E620314E37968000D8E82 /* WXSocket.m */; };
+		010E620714E853F0000D8E82 /* WXServerSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 010E620614E853F0000D8E82 /* WXServerSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +33,17 @@
 		010E61E614E223D9000D8E82 /* WeatherManServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WeatherManServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		010E61EA14E223D9000D8E82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		010E61ED14E223DA000D8E82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		010E61F014E223DA000D8E82 /* WeatherManServer-Prefix.pch */ = {isa = PBXFileReference; path = "WeatherManServer-Prefix.pch"; sourceTree = "<group>"; };
+		010E61F014E223DA000D8E82 /* WeatherManServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeatherManServer-Prefix.pch"; sourceTree = "<group>"; };
 		010E61F114E223DA000D8E82 /* WeatherManServer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WeatherManServer.1; sourceTree = "<group>"; };
+		010E61F814E36D10000D8E82 /* WXSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSocketClient.h; sourceTree = "<group>"; };
+		010E61F914E36D10000D8E82 /* WXSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSocketClient.m; sourceTree = "<group>"; };
+		010E61FB14E36F31000D8E82 /* WXSocketFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSocketFactory.h; sourceTree = "<group>"; };
+		010E61FC14E36F90000D8E82 /* WXDefaultSocketFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXDefaultSocketFactory.h; sourceTree = "<group>"; };
+		010E61FD14E36F90000D8E82 /* WXDefaultSocketFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXDefaultSocketFactory.m; sourceTree = "<group>"; };
+		010E620214E37968000D8E82 /* WXSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSocket.h; sourceTree = "<group>"; };
+		010E620314E37968000D8E82 /* WXSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSocket.m; sourceTree = "<group>"; };
+		010E620514E853F0000D8E82 /* WXServerSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXServerSocket.h; sourceTree = "<group>"; };
+		010E620614E853F0000D8E82 /* WXServerSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXServerSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +88,15 @@
 			children = (
 				010E61ED14E223DA000D8E82 /* main.m */,
 				010E61F114E223DA000D8E82 /* WeatherManServer.1 */,
+				010E620214E37968000D8E82 /* WXSocket.h */,
+				010E620314E37968000D8E82 /* WXSocket.m */,
+				010E620514E853F0000D8E82 /* WXServerSocket.h */,
+				010E620614E853F0000D8E82 /* WXServerSocket.m */,
+				010E61F814E36D10000D8E82 /* WXSocketClient.h */,
+				010E61F914E36D10000D8E82 /* WXSocketClient.m */,
+				010E61FB14E36F31000D8E82 /* WXSocketFactory.h */,
+				010E61FC14E36F90000D8E82 /* WXDefaultSocketFactory.h */,
+				010E61FD14E36F90000D8E82 /* WXDefaultSocketFactory.m */,
 				010E61EF14E223DA000D8E82 /* Supporting Files */,
 			);
 			path = WeatherManServer;
@@ -139,6 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				010E61EE14E223DA000D8E82 /* main.m in Sources */,
+				010E61FA14E36D10000D8E82 /* WXSocketClient.m in Sources */,
+				010E61FE14E36F90000D8E82 /* WXDefaultSocketFactory.m in Sources */,
+				010E620414E37968000D8E82 /* WXSocket.m in Sources */,
+				010E620714E853F0000D8E82 /* WXServerSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +192,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -187,7 +213,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
 			name = Release;
