@@ -135,6 +135,23 @@ static id<WXSocketFactory> __DEFAULT_SOCKET_FACTORY = nil;
     _isConnected_ = NO;    
 }
 
+/*
+ * Set the timeout in milliseconds of a currently open connection.
+ * Only call this method after a connection has been opened
+ * by [self connect:].
+ */
+- (void)setSocketTimeout:(NSTimeInterval)timeout error:(NSError **)error
+{
+    _socket_.socketTimeout = timeout;
+}
+
+/**
+ * Returns the timeout in milliseconds of the currently opened socket.
+ */
+- (NSTimeInterval)socketTimeout:(NSError *__autoreleasing *)error
+{
+    return _socket_.socketTimeout;
+}
 
 
 

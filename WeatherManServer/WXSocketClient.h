@@ -45,6 +45,7 @@ extern NSString * const WXSOCKETCLIENT_NETASCII_EOL;
 - (void)connectToHost:(NSString *)remoteHost toPort:(int)remotePort fromAddress:(NSString *)localAddr fromPort:(int)localPort error:(NSError **)error;
 - (void)connectToHost:(NSString *)remoteHost error:(NSError **)error;
 - (void)disconnect:(NSError **)error;
-- (void)setSocketTimeout:(NSError **)error;
+- (void)setSocketTimeout:(NSTimeInterval)timeout error:(NSError **)error;
+- (NSTimeInterval)socketTimeout:(NSError **)error;
 
 @end
