@@ -12,11 +12,11 @@
 
 @protocol WXSocketFactory <NSObject>
 
-- (WXSocket *) createSocketToHost:(NSString *)remoteHost toPort:(int)remotePort error:(NSError **)error;
-- (WXSocket *) createSocketToHost:(NSString *)remoteHost toPort:(int)remotePort fromAddress:(NSString *)localAddr fromPort:(int)localPort error:(NSError **)error;
+- (WXSocket *) createSocketToHost:(NSString *)remoteHost toPort:(int)remotePort;
+- (WXSocket *) createSocketToHost:(NSString *)remoteHost toPort:(int)remotePort fromAddress:(NSString *)localAddr fromPort:(int)localPort;
 
-- (WXServerSocket *)createServerSocketForPort:(int)port error:(NSError **)error;
-- (WXServerSocket *)createServerSocketForPort:(int)port withBacklog:(int)backlog error:(NSError **)error;
+- (WXServerSocket *)createServerSocketForPort:(int)port;
+- (WXServerSocket *)createServerSocketForPort:(int)port withBacklog:(int)backlogr;
 - (WXServerSocket *)createServerSocketForPort:(int)port withBacklog:(int)backlog forAddress:(NSString *)addr;
 
 

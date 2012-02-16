@@ -10,7 +10,7 @@
 
 @implementation WXSocket
 
-@synthesize inputStream,outputStream,socketTimeout;
+@synthesize inputStream,outputStream,soTimeout,tcpNoDelay,localPort,port,localHost,host;
 
 - (id)init {
     self = [super init];
@@ -20,9 +20,19 @@
     return self;
 }
 
-- (void)close:(NSError **)error
+- (void)close
 {
     
+}
+
+- (void)setSoLinger:(BOOL)linger length:(NSTimeInterval)length
+{
+    
+}
+
+- (NSTimeInterval)soLinger
+{
+    return 0;
 }
 
 @end

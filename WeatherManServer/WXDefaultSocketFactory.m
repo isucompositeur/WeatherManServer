@@ -10,20 +10,20 @@
 
 @implementation WXDefaultSocketFactory
 
-- (WXSocket *) createSocketToHost:(NSString *)remoteHost toPort:(int)remotePort error:(NSError **)error
+- (WXSocket *) createSocketToHost:(NSString *)remoteHost toPort:(int)remotePort
 {
     return nil;
 }
-- (WXSocket *) createSocketToHost:(NSString *)remoteHost toPort:(int)remotePort fromAddress:(NSString *)localAddr fromPort:(int)localPort error:(NSError **)error
+- (WXSocket *) createSocketToHost:(NSString *)remoteHost toPort:(int)remotePort fromAddress:(NSString *)localAddr fromPort:(int)localPort
 {
     return nil;
 }
 
-- (WXServerSocket *)createServerSocketForPort:(int)port error:(NSError **)error
+- (WXServerSocket *)createServerSocketForPort:(int)port
 {
     return nil;
 }
-- (WXServerSocket *)createServerSocketForPort:(int)port withBacklog:(int)backlog error:(NSError **)error
+- (WXServerSocket *)createServerSocketForPort:(int)port withBacklog:(int)backlog
 {
     return nil;
 }
