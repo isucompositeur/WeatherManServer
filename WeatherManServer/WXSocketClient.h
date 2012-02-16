@@ -37,6 +37,7 @@ extern NSString * const WXSOCKETCLIENT_NETASCII_EOL;
     
 }
 
+
 @property(readonly,atomic,getter=isConnected) BOOL _isConnected_;
 @property(assign,atomic,getter=defaultPort,setter=setDefaultPort:) int _defaultPort_;
 @property(assign,atomic,getter=defaultTimeout,setter=setDefaultTimeout:) NSTimeInterval _timeout_;
